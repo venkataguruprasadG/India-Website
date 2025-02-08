@@ -8,14 +8,14 @@
     background: linear-gradient(90deg, #ff7f00, #ffffff, #008000); /* Horizontal gradient with specific color codes */
 }
 .navbar-brand {
-    color: #000;
+    color: #8f490f;
     font-size: 24px; /* Increase the font size */
     font-family: Courier New; 
     font-weight: normal;/* Make the text bold */
     transition: color 0.3s, font-weight 0.3s;
   }
   .navbar-brand:hover {
-    color: crimson;
+    color: rgb(85, 41, 5);
     font-weight: bold;
     text-shadow: #ff7f00;
   }
