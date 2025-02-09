@@ -7,6 +7,20 @@
     <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" href="bootstrap.bundle.min.js">
     <title>Illuminating India: A Scholarly Perspective</title>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+          var title = "Illuminating India: A Scholarly Perspective ";
+          var speed = 200; // Speed of scrolling in milliseconds
+          var pos = 0;
+          function scrollTitle() {
+              document.title = title.substring(pos) + title.substring(0, pos);
+              pos++;
+              if (pos > title.length) pos = 0;
+              setTimeout(scrollTitle, speed);
+          }
+          scrollTitle();
+      });
+  </script>
 </head>
 <body>
     <nav class="navbar custom-bg">
