@@ -1,1 +1,1 @@
-Going to Create a Website on Note Taking and To-do List App especially designed for College Students.
+This is the website which describes about the culture and history of India and other feedom fighters.
