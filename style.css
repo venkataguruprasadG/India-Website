@@ -1,57 +1,109 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
 .navbar {
-  padding: 20px;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  font-size: 18px;
+    padding: 20px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
 }
 
 .custom-bg {
-  background: linear-gradient(90deg, #ff7f00, #ffffff, #008000); /* Horizontal gradient with specific color codes */
+    background: linear-gradient(90deg, #ff7f00, #ffffff, #008000); /* Horizontal gradient with specific color codes */
 }
 
 .navbar-brand {
-  color: #8f490f !important;
-  font-size: 24px; /* Increase the font size */ 
-  font-weight: normal; /* Make the text bold */
-  transition: color 0.3s, font-weight 0.3s;
-  margin-right: auto; /* Align the brand to the left */
+    color: #8f490f !important;
+    font-size: 24px; /* Increase the font size */ 
+    font-weight: normal; /* Make the text bold */
+    transition: color 0.3s, font-weight 0.3s;
+    margin-right: auto; /* Align the brand to the left */
 }
 
 .navbar-brand:hover {
-  color: rgb(85, 41, 5);
-  font-weight: bold;
-  text-shadow: #ff7f00;
+    color: rgb(85, 41, 5);
+    font-weight: bold;
+    text-shadow: #ff7f00;
 }
 
-/* Base link styles */
 .nav-link {
-  color: #000; /* Set initial color */
-  text-decoration: none; /* Remove underline */
-  font-weight: normal; /* Initial font weight */
-  transition: color 0.3s, font-weight 0.3s; /* Smooth transition */
+    color: #000; /* Set initial color */
+    text-decoration: none; /* Remove underline */
+    font-weight: normal; /* Initial font weight */
+    transition: color 0.3s, font-weight 0.3s; /* Smooth transition */
 }
 
-/* Hover styles */
 .nav-link:hover {
-  color: #00008b; /* Dark blue color */
-  font-weight: bold; /* Make text bold */
-  text-decoration: none; /* Underline on hover */
+    color: #00008b; /* Dark blue color */
+    font-weight: bold; /* Make text bold */
+    text-decoration: none; /* Underline on hover */
 }
 
 .navbar .container-fluid {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .navbar .nav {
-  display: flex;
-  justify-content: center;
-  flex: 1;
-  padding-right: 250px;
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    padding-right: 250px;
 }
 
 .nav-item {
-  list-style: none;
+    list-style: none;
+}
+
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 60px); /* Adjust height to leave space for the navbar */
+    top: 1px; /* Move the slideshow down to avoid overlapping the navbar */
+    overflow: hidden;
+}
+
+.slide {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire container */
+}
+
+.flashcard {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: slide-in 1s forwards;
+}
+
+.flashcard-img {
+    width: 300px;
+    height: auto;
+}
+
+@keyframes slide-in {
+    from {
+        left: 100%;
+        opacity: 0;
+    }
+    to {
+        left: 50%;
+        opacity: 1;
+    }
 }

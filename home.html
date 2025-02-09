@@ -5,29 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="bootstrap.min.css">
-    <link rel="stylesheet" href="bootstrap.bundle.min.js">
     <title>Illuminating India: A Scholarly Perspective</title>
     <script>
-      // Waits for the DOM to be fully loaded and ready before executing the script
       document.addEventListener("DOMContentLoaded", function() {
-          // The title text you want to display in the browser tab
           var title = "Illuminating India: A Scholarly Perspective ";
-          // Controls the speed of the scrolling in milliseconds
           var speed = 200; 
-          // Initializes the position for the scrolling text
           var pos = 0;
-          // Defines the function to scroll the title text
           function scrollTitle() {
-              // Updates the browser tab title with the scrolled text
               document.title = title.substring(pos) + title.substring(0, pos);
-              // Increments the position for the next scroll
               pos++;
-              // Resets the position if it exceeds the title length
               if (pos > title.length) pos = 0;
-              // Calls the scrollTitle function repeatedly at the specified speed
               setTimeout(scrollTitle, speed);
           }
-          // Starts the scrolling title effect
           scrollTitle();
       });
     </script>
@@ -56,7 +45,7 @@
     <div class="slide">
         <img src="images/ashoka wheel background image.jpg" class="background">
         <div class="flashcard">
-            <img src="flashcard.jpg" class="flashcard-img">
+            <img src="images/Temple Photo SlideShow Imaage.jpg" class="flashcard-img">
         </div>
     </div>
 </div>
